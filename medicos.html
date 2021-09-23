@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+</head>
+<body>
+
+    <div class="Cabecera" >
+
+      <div class="Banner">
+        <figure class="image is-3by1">
+          <img src="Banner.png" alt="">
+        </figure>
+      </div>
+
+
+
+        <div class="Navegacion" >
+            <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #ffebee;">
+                <div class="navbar-brand">
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start" >
+
+                    <a class="navbar-item" href="index.html">
+                        <img src="Logo3.png">
+                    </a>
+
+
+                    <a class="navbar-item" href="cuidados.html" style="font-size: 20px;">
+                      <strong>Cuidados medicos</strong>
+                    </a>
+              
+                    <a class="navbar-item" href="medicos.html" style="font-size: 20px;">
+                      <strong>Personal medico</strong>
+                    </a>
+                    
+                    <a class="navbar-item" href="experiencia.html" style="font-size: 20px;">
+                      <strong>Experiencia de nuestros clientes</strong>
+                    </a>
+
+                    <a class="navbar-item" href="ubicaciones.html" style="font-size: 20px;">
+                      <strong>Sucursales</strong>
+                    </a>
+
+                  </div>
+
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary" style="background-color: rgb(189, 116, 116);" href="formulario.html">
+                          <strong>Hacer cita</strong>
+                        </a>
+                        <a class="button is-light" style="background-color: rgb(121, 116, 189);color: white;" href="preguntas.html" >
+                          <strong>Preguntas frecuentes</strong>
+                        </a>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </nav>
+        </div>
+
+    </div>
+
+    <div class="content" style="text-align: center; margin-bottom: 0%;margin-top: 40px;padding-bottom: 0%;">
+      <h4 style="color: rgba(0, 0, 0, 0.849);">Nuestros médicos</h4>
+    </div>
+
+
+    <div class="container">
+
+      <div class="columns is-mobile" style="text-align: center;">
+        <div class="column is-half" >
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Ortega
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico1.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal1" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal1" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Juan Manuel Ortega Sanchez</strong> 
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: #f3476a;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+        <div class="column is-half">
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Sanchez
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico2.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal2" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal2" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Maria Guadalupe Sanchez Miguel</strong> 
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: #f3476a;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+      </div>
+      <div class="columns is-mobile" style="text-align: center;">
+        <div class="column is-half" >
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Farrera
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico3.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal3" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal3" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Orlando Farrera Garcia</strong> 
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: #f3476a;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+        <div class="column is-half">
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Cabrera
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico4.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal4" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal4" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Asunción Cabrera Martinez</strong> 
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: #f3476a;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+      </div>
+      <div class="columns is-mobile" style="text-align: center;">
+        <div class="column is-half" >
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Medina
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico5.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal5" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal5" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Enrique Medina Cruz</strong> <small>@emedinac@mail.com</small> <small>28 años</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                            <p>
+                              <textarea readonly class="textarea is-danger" placeholder="Información del doc" name="comentario" id="content" cols="30" rows="15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo obcaecati error, ullam eligendi exercitationem quaerat illum ad dolore. Quisquam quae, pariatur, quis vero doloribus voluptatibus esse nisi cupiditate nemo sed, molestiae blanditiis labore fugit id maiores voluptatem cum temporibus ut facilis fugiat exercitationem a sapiente neque. Delectus sint corporis repellat.
+                              </textarea>
+                                  
+                            </p>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: aliceblue;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+        <div class="column is-half">
+          <div class = "box">
+            <section class = "section">
+                <div class = "container">
+                  <div class="content">
+                    <h1 style="text-align: center;" >
+                      Médico Fuentes
+                    </h1>
+                    <figure class="media-left">
+                      <p class="image">
+                        <img src="medico6.jpg">
+                      </p>
+                    </figure>
+                  </div>
+    
+                   
+                  <p style="text-align: center;">
+                      <button class = "button is-danger modal-button" data-target = "#modal6" onClick = "mostrar()">Mostrar información</button>
+                  </p>
+                  <div id = "modal6" class = "modal">
+                    <div class = "modal-background">
+    
+                    </div>
+                    <div class = "modal-content">
+                      <div class = "box">
+                        <article class="media">
+                          <figure class="media-left">
+                            <p class="image is-64x64">
+                              <img src="icon-veterinario.png">
+                            </p>
+                          </figure>
+                          <div class="media-content">
+                            <div class="content">
+                              <p>
+                                <strong>Sofia Fuentes de Ortiz</strong> <small>@sfuentesdo@mail.com</small> <small>34 años</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                              </p>
+                            </div>
+                            <nav class="level is-mobile">
+                              <div class="level-left">
+                                <a class="level-item" aria-label="reply" href="https://www.facebook.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-facebook"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet" href="https:www.twitter.com">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-twitter"></i>
+                                  </span>
+                                </a>
+                                <a class="level-item" aria-label="like" href="https://web.whatsapp.com/">
+                                  <span class="icon is-small">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </span>
+                                </a>
+                              </div>
+                            </nav>
+                            <p>
+                              <textarea readonly class="textarea is-danger" placeholder="Información del doc" name="comentario" id="content" cols="30" rows="15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo obcaecati error, ullam eligendi exercitationem quaerat illum ad dolore. Quisquam quae, pariatur, quis vero doloribus voluptatibus esse nisi cupiditate nemo sed, molestiae blanditiis labore fugit id maiores voluptatem cum temporibus ut facilis fugiat exercitationem a sapiente neque. Delectus sint corporis repellat.
+                              </textarea>
+                                  
+                            </p>
+                          </div>
+                          </article>
+                        </div>
+                      </div>
+                      <button class = "modal-close is-large" aria-label = "close" style="background-color: aliceblue;" ></button>
+                   </div>
+                </div>
+             </section>
+             
+             <script>
+                $(".modal-button").click(function() {
+                   var target = $(this).data("target");
+                   $("html").addClass("is-clipped");
+                   $(target).addClass("is-active");
+                });
+                
+                $(".modal-close").click(function() {
+                   $("html").removeClass("is-clipped");
+                   $(this).parent().removeClass("is-active");
+                });
+             </script>
+        </div>
+        </div>
+      </div>
+    </div>
+   
+
+
+
+    <footer class="footer" style="padding-bottom: 0%;padding-top: 0%;">
+      <div class="content has-text-centered" style="background-color: #eed6e8;">
+
+          <p>
+            <h1 style="padding-top: 1%;">
+              <strong style="color: rgb(175, 34, 34);;">MediCats</strong>
+            </h1>
+          </p>
+          <p>
+            <h5 style="color: rgb(214, 114, 114);">
+              Condiciones generales de uso
+            </h5>
+          </p>
+          <p>
+            <h5 style="color: rgb(214, 114, 114);;">
+              Política de privacidad
+            </h5>
+          </p>
+          <p>
+            <h5 style="color: rgb(214, 114, 114);;">
+              Política de cookies
+            </h5>
+          </p>
+          <p>
+            <h5 style="color: rgb(214, 114, 114);;">
+              Redacción
+            </h5>
+          </p>
+          <p>
+            <h5 style="color: rgb(214, 114, 114);;">
+              Contenido
+            </h5>
+          </p>
+          <p>
+            <h2 style="color: rgb(214, 114, 114);;">
+              Siguenos
+            </h2>
+          </p>
+          <div class="links" style="margin-left:2%;">
+            <a href="https://facebook.com"  target="_blank" style="margin-right: 2%;color: #a01a58"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://youtube.com"  target="_blank" style="margin-right: 2%;color: #a01a58;"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://instagram.com"  target="_blank" style="margin-right: 2%;color: #a01a58;"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com"  target="_blank" style="margin-right: 2%;color: #a01a58"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+          <p>
+            <h3 style="color: rgb(124, 6, 6);padding-bottom: 13px;">
+              MediCats - by Hina & MidnightStar
+            </h3>
+
+        </p>
+        
+      </div>
+    </footer>
+<script src="slider.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

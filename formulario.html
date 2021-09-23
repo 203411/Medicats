@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="navbar.js"></script>
+  </head>
+<body style="background-image: url(backing.png);">
+
+
+    <div class="Cabecera" >
+
+      <div class="Banner">
+        <figure class="image is-3by1">
+          <img src="Banner.png" alt="">
+        </figure>
+      </div>
+
+
+
+        <div class="Navegacion" >
+            <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #ffebee;">
+                <div class="navbar-brand">
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start" >
+
+                    <a class="navbar-item" href="index.html">
+                        <img src="Logo3.png">
+                    </a>
+
+                    <a class="navbar-item" href="cuidados.html" style="font-size: 20px;">
+                      <strong>Cuidados medicos</strong>
+                    </a>
+              
+                    <a class="navbar-item" href="medicos.html" style="font-size: 20px;">
+                      <strong>Personal medico</strong>
+                    </a>
+                    
+                    <a class="navbar-item" href="experiencia.html" style="font-size: 20px;">
+                      <strong>Experiencia de nuestros clientes</strong>
+                    </a>
+
+                    <a class="navbar-item" href="ubicaciones.html" style="font-size: 20px;">
+                      <strong>Sucursales</strong>
+                    </a>
+
+                  </div>
+
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary" style="background-color: rgb(189, 116, 116);" href="formulario.html">
+                          <strong>Hacer cita</strong>
+                        </a>
+                        <a class="button is-light" style="background-color: rgb(121, 116, 189);color: white;" href="preguntas.html" >
+                          <strong>Preguntas frecuentes</strong>
+                        </a>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </nav>
+        </div>
+
+    </div>
+
+    
+
+<div class = "box" style="margin-left: 10%;margin-right: 10%;margin-top: 2%;">
+
+
+        <div class="content" style="text-align: center;">
+          <h3 style="text-align: left;margin-bottom: 7px;text-align: center;">
+            Formulario de Cita:
+           </h3>
+        </div>
+
+
+
+    <div class="columns is-mobile">
+        <div class="column">
+            <input class="input" type="text" placeholder="Nombre(s) del dueño">
+
+        </div>
+        <div class="column">
+            <input class="input" type="text" placeholder="Apellido(s) del dueño">
+
+        </div>
+        <div class="column">
+            <input class="input" type="text" placeholder="Nombre(s) del paciente">
+
+        </div>
+        <div class="column">
+            <input class="input" type="text" placeholder="Edad del paciente">
+
+        </div>
+      </div>
+
+      <div class="columns is-mobile">
+        <div class="column">
+            <input class="input" type="mail" placeholder="Correo Electronico">
+
+        </div>
+        <div class="column">
+          <div class="content" style="margin-bottom: 0%;">
+            <h6 style="text-align: left;margin-bottom: 7px;">
+                 Sexo del paciente:
+            </h6>
+          </div>
+    
+         
+          <div class="control" style="text-align: left;">
+            <label class="radio">
+              <input type="radio" name="Sexo">
+              M 
+            </label>
+            <label class="radio">
+              <input type="radio" name="Sexo" checked>
+              H
+            </label>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="content" style="margin-bottom: 0%;">
+            <h6 style="text-align: left;margin-bottom: 7px;">
+                 ¿Cuenta con antecedentes en MediCats?
+            </h6>
+          </div>
+    
+         
+          <div class="control" style="text-align: left;">
+            <label class="radio">
+              <input type="radio" name="antecedentes">
+              Si 
+            </label>
+            <label class="radio">
+              <input type="radio" name="antecedentes" checked>
+              No
+            </label>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="content" style="margin-bottom: 0%;">
+            <h6 style="text-align: left;margin-bottom: 7px;">
+                 ¿Su paciente ha estado en otro veterinario?
+            </h6>
+          </div>
+    
+         
+          <div class="control" style="text-align: left;">
+            <label class="radio">
+              <input type="radio" name="foobar">
+              Si 
+            </label>
+            <label class="radio">
+              <input type="radio" name="foobar" checked>
+              No
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+
+      
+      <div style="margin-bottom: 1.5%;">
+          <div class="control">
+            <textarea class="textarea is-focused" placeholder="Detalle el padecimiento"></textarea>
+          </div>
+      </div>
+
+
+
+
+
+      <div style="text-align: center;">
+        <button class="button is-danger is-focused" style="font-size: 20px;margin-top: 4px;margin: auto;">Crear Cita </button>
+
+      </div>
+
+
+</div>
+
+
+
+<footer class="footer" style="padding-bottom: 2px;padding-top: 0%;padding-left: 1px;padding-right: 1px;">
+  <div class="content has-text-centered" style="background-color: #eed6e8;">
+
+      <p>
+        <h1 style="padding-top: 1%;">
+          <strong style="color: rgb(175, 34, 34);;">MediCats</strong>
+        </h1>
+      </p>
+      <p>
+        <h5 style="color: rgb(214, 114, 114);">
+          Condiciones generales de uso
+        </h5>
+      </p>
+      <p>
+        <h5 style="color: rgb(214, 114, 114);;">
+          Política de privacidad
+        </h5>
+      </p>
+      <p>
+        <h5 style="color: rgb(214, 114, 114);;">
+          Política de cookies
+        </h5>
+      </p>
+      <p>
+        <h5 style="color: rgb(214, 114, 114);;">
+          Redacción
+        </h5>
+      </p>
+      <p>
+        <h5 style="color: rgb(214, 114, 114);;">
+          Contenido
+        </h5>
+      </p>
+      <p>
+        <h2 style="color: rgb(214, 114, 114);;">
+          Siguenos
+        </h2>
+      </p>
+      <div class="links" style="margin-left:2%;">
+        <a href="https://facebook.com"  target="_blank" style="margin-right: 2%;color: #a01a58"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://youtube.com"  target="_blank" style="margin-right: 2%;color: #a01a58;"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://instagram.com"  target="_blank" style="margin-right: 2%;color: #a01a58;"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com"  target="_blank" style="margin-right: 2%;color: #a01a58"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      <p>
+        <h3 style="color: rgb(124, 6, 6);padding-bottom: 13px;">
+          MediCats - by Hina & MidnightStar
+        </h3>
+
+    </p>
+    
+  </div>
+</footer>
+</body>
+</html>
